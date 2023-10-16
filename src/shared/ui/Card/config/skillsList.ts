@@ -23,7 +23,7 @@ export const skillsList = [
   {
     title: "Typescript",
     img: "/icons/typescript.png",
-    // level: "Advanced",
+    //level: "Advanced",
   },
   {
     title: "Gatsby",
