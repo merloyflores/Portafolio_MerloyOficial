@@ -1,0 +1,12 @@
+{
+    "configurations": [
+
+        
+        {
+            "type": "chrome",
+            // "name": "https://github.com/merloyflores/Portafolio_oficial.git",
+            "request": "launch",
+            "url": "https://github.com/merloyflores/Portafolio_oficial.git"
+        }
+    ]
+}

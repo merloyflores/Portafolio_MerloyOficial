@@ -1,0 +1,71 @@
+@use "./config/variables" as var;
+@use "./config/tools" as tool;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #202020;
+  border-left: 1px solid #303030;
+}
+::-webkit-scrollbar-thumb {
+  background: var.$primary-color;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #009cff;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var.$font-family;
+  background-color: var.$bg-color;
+  color: var.$font-color;
+  overflow-x: hidden;
+}
+
+#___gatsby {
+  width: 100%;
+
+  background: rgba(33, 33, 33, 0.88);
+  background: -webkit-linear-gradient(
+    29deg,
+    rgba(33, 33, 33, 0.88) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  background: linear-gradient(
+    29deg,
+    rgba(33, 33, 33, 0.88) 0%,
+    rgba(0, 0, 0, 0.93) 100%
+  );
+
+  > #gatsby-focus-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+// Import others styles
+@import "./config/reset";
+@import "./generic/Header/Header";
+@import "./generic/Navbar/Navbar";
+@import "./generic/Footer/Footer";
+@import "./generic/Main/main-index";
+@import "./generic/Main/main-about";
+@import "./generic/Main/main-contact";
+@import "./generic/Main/main-skills";
+@import "./generic/Main/main-projects";
+@import "./generic/Background/background-animation";

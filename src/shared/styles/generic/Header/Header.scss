@@ -1,0 +1,7 @@
+@use '../../config/tools' as tool;
+
+.header {
+    width: 100%;
+    @include tool.flex-row;
+    justify-content: center;
+}

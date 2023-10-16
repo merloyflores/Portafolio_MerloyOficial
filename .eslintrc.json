@@ -1,0 +1,47 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "./tsconfig.json"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "import"
+    ],
+    "rules": {
+        "no-trailing-spaces": [
+            "error",
+            {
+                "ignoreComments": true
+            }
+        ],
+        "eol-last": [
+            "warn",
+            "always"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

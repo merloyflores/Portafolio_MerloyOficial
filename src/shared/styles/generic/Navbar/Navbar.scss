@@ -1,0 +1,87 @@
+@use '../../config/tools' as tool;
+@use '../../config/variables' as var;
+
+.navbar {
+  @include tool.flex-row;
+  width: 100%;
+  max-width: 1920px;
+  justify-content: space-between;
+  padding: 20px;
+
+  @media (max-width: 965px) {
+    justify-content: flex-start;
+  }
+
+  .left, .right {
+    @include tool.flex-row;
+    justify-content: center;
+    list-style: none;
+    @media (max-width: 965px) {
+      flex-wrap: wrap;
+    }
+
+    .link {
+      @include tool.flex-row;
+      gap: 5px;
+      padding: 0 5px 2px;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+      font-size: 17px;
+
+      @media (max-width: 965px) {
+        font-size: calc(0.7em + 1vw);
+      }
+
+      .gatsby {
+        font-size: 23px;
+      }
+
+      &.Gatsby {
+        @media (max-width: 965px) {
+          display: none;
+        }
+      }
+
+      &.Github {
+        @media (max-width: 965px) {
+          font-size: 20px;
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      &:after {
+        transition: 0.2s;
+        content: '';
+        width: 0;
+        height: 1.5px;
+        position: absolute;
+        background-color: transparent;
+        bottom: 0;
+        left: 50%;
+      }
+
+      &:hover:after {
+        left: 0;
+        width: 100%;
+        background-color: var.$primary-color;
+      }
+    }
+  }
+
+  .left {
+    gap: 25px;
+    @media (max-width: 965px) {
+      gap: 5px;
+    }
+  }
+
+  .right {
+    @media (max-width: 535px) {
+      display: none;
+    }
+  }
+}

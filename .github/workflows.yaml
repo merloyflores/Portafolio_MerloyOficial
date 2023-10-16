@@ -1,0 +1,29 @@
+name: ESLint
+
+on:
+  push:
+    branches: [main] # Ejecutar el flujo de trabajo solo cuando se hagan cambios en la rama principal
+  pull_request:
+    branches: [main] # Ejecutar el flujo de trabajo solo cuando se haga una solicitud de extracción en la rama principal
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 # Utilizar la acción "checkout" para obtener el código del repositorio
+
+      - name: Install dependencies
+        run: npm ci # Instalar las dependencias del proyecto
+
+      - name: Run ESLint
+        run: npx eslint src/**/*.{js,jsx,ts,tsx} # Ejecutar ESLint en el proyecto
+
+      - name: Review changes
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: ESLint review
+          commit-message: "ESLint review"
+          body: |
+            Changes proposed by ESLint
+          branch: eslint-review
