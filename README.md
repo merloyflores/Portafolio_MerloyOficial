@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Erick Ramirez | Portafolio web
+  Merloy Flores | Portafolio web
 </h1>
 
 ## 🚀 Quick start
