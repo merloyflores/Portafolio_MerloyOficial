@@ -2,6 +2,9 @@
 @use '../../config/variables' as var;
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
   width: 100%;
   max-width: 1920px;
   align-self: center;

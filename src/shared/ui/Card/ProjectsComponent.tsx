@@ -19,6 +19,7 @@ export const ProjectsComponent = () => {
             alt={project.title}
           />
           <strong className="skill">{project.skill}</strong>
+          <strong className="skill-1">{project.description}</strong>
         </a>
       ))}
     </>

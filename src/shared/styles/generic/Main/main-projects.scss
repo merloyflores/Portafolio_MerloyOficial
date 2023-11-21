@@ -12,6 +12,7 @@
   .card {
     width: 100%;
     max-width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +37,11 @@
 
     .skill {
       color: #808080;
+    }
+
+    .skill-1 {
+      padding: 5px;
+      color: #b7afb5;
     }
 
     .screenshot {

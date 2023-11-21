@@ -39,48 +39,21 @@ const AboutPage: React.FC<PageProps> = () => {
         <div className="left">
           <img className="photo" src="/photos/Merloy.jpg" alt="Erick" />
         </div>
-        <ul className="right">
-          <li className="presentation">Desarrollador Web Full stack</li>
-            <br></br>
-            <div>  
-              Soy un apasionado desarrollador web full-stack con sede en Costa Rica, con una sólida experiencia en el desarrollo de software y diseño instruccional. 
-              Mi enfoque se centra en la creación de soluciones innovadoras y efectivas utilizando tecnologías de vanguardia. 
-              
-            </div>
-            <div>
-                <ul>
-                    <br></br>  
-                      <b><h3>Experiencia en Desarrollo Web:</h3></b>
-                      <br></br> 
-                      He tenido la oportunidad de trabajar en una variedad de proyectos, empleando tecnologías de punta como React y Node.js. Algunos de mis logros más notables incluyen:
-                      <li>
-                        <b>Aplicación de Pronóstico del Clima:</b> Diseñé y desarrollé una aplicación que proporciona pronósticos meteorológicos precisos, permitiendo a los usuarios estar siempre preparados.
-                      </li>
-
-                      <li>
-                        <b>Aplicación "Rick y Morty":</b> Creé una aplicación interactiva basada en la popular serie "Rick y Morty" que permite a los usuarios acceder a información detallada sobre personajes y eventos a través de una API, mejorando la experiencia de los fanáticos de la serie.
-                      </li>
-
-                      <li>
-                        <b>Pokédex Interactiva:</b> Desarrollé una página web estilo Pokédex que permite a los usuarios explorar la vasta colección de Pokémon, brindando una experiencia única y educativa.
-                      </li>
-
-                      <li>
-                        <b>Colaboración en Plataforma de Comercio Electrónico:</b> Participé activamente en el desarrollo de una plataforma de comercio electrónico, contribuyendo al diseño y la funcionalidad del sistema, lo que resultó en una experiencia de compra intuitiva y eficiente para los usuarios.
-                      </li>
-                      <br></br> 
-                      <br></br> 
-                      <b><h3>Habilidades de Desarrollo Instruccional:</h3></b>
-                      <br></br> 
-                      Además de mi experiencia como desarrollador, también soy un especialista en el uso de herramientas Power Platform.
-                      <br></br>
-                      <br></br>
-                      Mi enfoque integral en el desarrollo web y el uso de herramientas de automatización me han proporcionado una base sólida para abordar proyectos de manera eficiente y colaborativa. Soy un apasionado por la creación de soluciones que marcan la diferencia y estoy comprometido a seguir aprendiendo y mejorando mis habilidades.
-                      <br></br> 
-                      Estoy ansioso por seguir contribuyendo a proyectos desafiantes y continuar creciendo como profesional en esta emocionante industria.
-                </ul>
-            </div>
-        </ul>
+        <div id="contenedor">
+          <ul className="right">
+            <li className="presentation">Desarrollador Web Full stack</li>
+              <br></br>
+              <div>  
+                  Soy un apasionado en el desarrollador web full stack con base en Costa Rica. Mi experiencia se ha centrado en la creación de aplicaciones web dinámicas y eficientes que ofrecen experiencias sólidas a los usuarios, me destaco como especialista en la automatización a través de Power Platform, simplificando procesos y potenciando la productividad.
+                  <br></br>
+                  <br></br>
+                  Mi enfoque no se limita solo al desarrollo técnico, también soy un desarrollador instruccional, lo que me permite fusionar la tecnología con la pedagogía para crear soluciones educativas innovadoras y efectivas.
+                  <br></br>
+                  <br></br>
+                  ¡Me encantaría ser parte de tu próximo proyecto y colaborar para llevarlo al siguiente nivel!
+              </div>
+          </ul>
+        </div>
       </motion.main>
     </Wrapper>
   );

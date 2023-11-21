@@ -10,7 +10,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/merloyflores/"
           className="right"
           rel="noreferrer"
-        >
+          >
           <p> Linkedin </p>
           <Icon icon="skill-icons:linkedin" />
         </a>

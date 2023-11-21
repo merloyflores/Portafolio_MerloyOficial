@@ -40,16 +40,20 @@ const IndexPage: React.FC<PageProps> = () => {
             <span> Hola soy </span>
             <p> Merloy Flores </p>
           </div>
-          <div className="profile">
-            <img className="photo" src="/photos/Merloy.jpg" alt="Erick" />
-            <div className="skills">
-              <span>Full stack developer</span>
-              <span>React.JS</span>
-              <span>Java Script</span>
-              <span>CSS</span>
-              <span>HTML</span>
-              <span>MySQL</span>
-              <span>Node.JS</span>
+          <div className="index1">
+            <div className="profile">
+              <img className="photo" src="/photos/Merloy.jpg" alt="Erick" />
+              <div className="skills">
+                  <p>
+                    Soy un apasionado desarrollador web full-stack con sede en Costa Rica, 
+                    <br></br>
+                    con una sólida experiencia en el desarrollo de software y diseño instruccional. 
+                    <br></br>
+                    Mi enfoque se centra en la creación de soluciones innovadoras y efectivas 
+                    <br></br>
+                    utilizando tecnologías de vanguardia.
+                  </p>
+              </div>
             </div>
           </div>
         </div>
