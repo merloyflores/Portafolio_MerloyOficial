@@ -15,10 +15,10 @@
 
     ```shell
     # Using git
-    git clone https://github.com/Erickgiber/portafolio-new.
+    git clone https://github.com/Portafolio_MerloyOficial/portafolio-new.
 
     # Using Github CLI
-    gh repo clone Erickgiber/portafolio-new
+    gh repo clone Portafolio_MerloyOficial/portafolio-new
     ```
 
 2.  **Start developing.**
