@@ -39,7 +39,7 @@ const ContactPage: React.FC<PageProps> = () => {
       >
         <ToastContainer />
         <div>
-          <h2 className="title"> Contact me </h2>
+          <h2 className="title"> Contactame </h2>
           <div className="contacts">
             <p
               className="email"
