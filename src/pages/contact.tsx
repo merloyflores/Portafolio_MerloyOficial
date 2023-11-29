@@ -15,9 +15,9 @@ const ContactPage: React.FC<PageProps> = () => {
       .writeText(text)
       .then(() => {
         if (!toast.isActive("copy-to-clipboard")) {
-          toast.success(`${text} Coppied to clipboard!`, {
+          toast.success(`${text} Copiada en el portapapeles!`, {
             toastId: "copy-to-clipboard",
-            autoClose: 2000, // Duración en milisegundos (en este caso, 3 segundos)
+            autoClose: 2000, // Duración en milisegundos (en este caso, 2 segundos)
             position: toast.POSITION.TOP_RIGHT, // Posición de la notificación
             pauseOnHover: false,
             draggable: false,
@@ -25,7 +25,7 @@ const ContactPage: React.FC<PageProps> = () => {
         }
       })
       .catch((error) => {
-        toast.error("Error copying to clipboard:", error);
+        toast.error("Error al copiar al portapapeles:", error);
       });
   };
 
