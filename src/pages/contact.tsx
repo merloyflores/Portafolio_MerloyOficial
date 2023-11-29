@@ -43,7 +43,7 @@ const ContactPage: React.FC<PageProps> = () => {
           <div className="contacts">
             <p
               className="email"
-              onClick={() => copyToClipboard("erickgiber7@gmail.com")}
+              onClick={() => copyToClipboard("merloy123@gmail.com")}
             >
               <Icon icon="line-md:email-twotone" />
               <span>Email:</span>
